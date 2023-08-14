@@ -3,30 +3,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 *{
+    box-sizing: border-box;
     margin: 0; 
     padding: 0;
     
 }
 
 body{
-    color: #828282;
+    background-color: black;
+    color: #ECECEC;
     margin: 0;
+    
 }
 
 main{
-    width: 626px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .img-principal{
-    width: 350px;
+    width: 280px;
     height: 238px;
-    margin: 64px auto 32px;
+    margin: 14px auto 18px;
 }
 
 h1{
-    color: #3F3D56;
+    color: white;
     font-size: 32px;
     margin-bottom:16px;
     font-weight: 500;
@@ -40,13 +45,15 @@ strong{
 
 
 .alertas{
-    color: #3F3D56;
+    color: #ef9ff7;
     font-weight: bold
 }
 
 p{
+    text-align: center;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .flutuar{
@@ -54,14 +61,6 @@ p{
     
 }
 
-footer{
-    text-align: center;
-    border-top: 1px solid #ECEFF2;
-    margin: 65px auto 2px;
-    width: 391px;
-    padding: 16px;
-
-}
 
 a + a{
     margin-left: 42px;
@@ -69,13 +68,32 @@ a + a{
 
 a{
     text-decoration: none;
-    color: #3F3D56;
+    color: #ef9ff7;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 15px;
 }
 
-.footer{
-    position: absolute;
-    width: 100%;
+a:hover{
+    border-bottom:1px solid #ECECEC;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #ECEFF2;
+    margin: 25px auto 0px;
+    width: 300px;
+    padding: 16px;
+}
+
+@media(max-width:620px){
+    main{
+        width: 90%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    p{
+        font-size: 14px;
+    }
 }
